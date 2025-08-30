@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Complaints | Student Grievance Portal</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../src/logo.png" type="image/png">
+  <link rel="stylesheet" href="../styles/student-view-complaints.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="student-dashboard.html" class="back-link">
+        ← Back to Dashboard
+      </a>
+      <h1>My Complaints</h1>
+      <div class="filter-controls">
+        <select id="statusFilter" class="filter-select">
+          <option value="all">All Status</option>
+          <option value="Pending">Pending</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Resolved">Resolved</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="🔍 Search complaints..." class="search-input">
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-number" id="totalComplaints">0</span>
+        <span class="stat-label">Total</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="pendingComplaints">0</span>
+        <span class="stat-label">Pending</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="inProgressComplaints">0</span>
+        <span class="stat-label">In Progress</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="resolvedComplaints">0</span>
+        <span class="stat-label">Resolved</span>
+      </div>
+    </div>
+
+    <div id="complaintsList" class="complaints-container"></div>
+  </div>
+
+  <script src="../scripts/student-view-complaints.js"></script>
+</body>
+
+</html>

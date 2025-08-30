@@ -1,0 +1,98 @@
+
+    :root {
+      --primary: #005bb5;
+      --bg-light: #e9f3ff;
+      --white: #fff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-light);
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 10px;
+    }
+    p.description {
+      color: #444;
+      max-width: 700px;
+      margin: auto;
+      font-size: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 10px;
+    }
+    .category-card {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+    .category-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .category-card .material-icons {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .help-section {
+      max-width: 700px;
+      background: var(--white);
+      padding: 25px;
+      margin: 40px auto;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+    .help-section button {
+      padding: 12px 24px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .help-section .primary {
+      background-color: #4a6eff;
+      color: #fff;
+    }
+    .help-section .secondary {
+      background-color: #eee;
+      color: #333;
+    }
+    .back-link {
+      display: block;
+      margin-left: 30px;
+      text-align: left;
+      color: #0073e6;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 500px) {
+      h2 {
+        font-size: 20px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }

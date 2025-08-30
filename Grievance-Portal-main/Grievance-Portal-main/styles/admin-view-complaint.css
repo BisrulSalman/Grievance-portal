@@ -1,0 +1,141 @@
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #eef4ff;
+      padding: 1rem;
+    }
+
+    a {
+      color: #038df6;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .status,
+    .priority {
+      padding: 0.4rem 0.8rem;
+      border-radius: 16px;
+      font-size: 0.75rem;
+      display: inline-block;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .status.in-progress {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .status.pending {
+      background: #fdecea;
+      color: #d9534f;
+    }
+
+    .status.resolved {
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .priority.medium {
+      background: #ffeeba;
+      color: #856404;
+    }
+
+    .priority.high {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .info-item {
+      flex: 1 1 45%;
+      background: #f2f7ff;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+
+    .section {
+      margin-top: 1rem;
+    }
+
+    .supporting {
+      display: flex;
+      align-items: center;
+      background: #e8f0fe;
+      padding: 0.5rem;
+      border-radius: 6px;
+    }
+
+    .supporting i {
+      margin-right: 8px;
+    }
+
+    .response-box {
+      background: #e3f2fd;
+      border-left: 4px solid #2196f3;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+      resize: vertical;
+    }
+
+    .btn-update {
+      align-self: flex-end;
+      background-color: #1E40AF;
+      color: rgb(255, 255, 255);
+      padding: 0.75rem 1.5rem;
+      border: solid 1px #007bff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
